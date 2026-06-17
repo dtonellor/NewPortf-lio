@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio Pessoal - Mário Laux Neto" />
+  <title>Daniel Tonello | Desenvolvedor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#home">DTR</a>
+    <ul class="nav-links">
+      <li><a href="#home">Início</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#experience">Experiência</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <a class="nav-cta" href="/curriculo.pdf" target="_blank">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Currículo
+    </a>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home">
+      <p class="hero-eyebrow">Olá, meu nome é</p>
+      <h1 class="hero-name">Daniel Tonello R.</h1>
+      <h2 class="hero-role">Front end em desenvolvimento.</h2>
+      <p class="hero-desc">
+        Graduando em Analise e Desenvolvimento de Sistemas e desenvolvedor focado no ecossistema JavaScript.
+        projetos práticos com HTML, CSS, React.js e Next.js.
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="https://wa.me/5554996837282" target="_blank">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Entre em contato!
+        </a>
+        <a class="btn-ghost" href="#projects">
+          Ver projetos ↓
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="fade-in">
+      <div class="section-header">
+        <span class="section-num">01.</span>
+        <h2 class="section-title">Sobre mim</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Sou um desenvolvedor apaixonado por transformar ideias em experiências digitais
+            interativas e funcionais. Minha jornada começou em funções do desenvolvimento front end,onde desenvolvi diversas habilidades.
+          </p>
+          <p>
+            Essa experiência me deu uma perspectiva única sobre processos e a importância da
+            precisão — mas minha paixão por resolver problemas de forma criativa me guiou para
+            o universo da tecnologia. Curso Sistemas de Informação na Unochapecó para aprimorar
+            essa nova direção.
+          </p>
+          <p>
+            Atualmente imerso no ecossistema de inovação do Pollen Parque Científico e Tecnológico,
+            como estagiário no Centro de Residência em Software, com foco em desenvolvimento web moderno.
+          </p>
+
+          <p class="skills-label">Stack principal</p>
+          <div class="skills-grid">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Chakra UI</span>
+            <span class="skill-tag">API REST</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+
+        <div class="about-photo">
+          <div class="photo-frame">
+            <span class="photo-initials">DTR </span>
+          </div>
+          <div class="photo-accent"><img src="minha foto.jpeg" alt="eu"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="fade-in">
+      <div class="section-header">
+        <span class="section-num">02.</span>
+        <h2 class="section-title">Onde trabalhei</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="exp-layout">
+        <div class="exp-tabs" role="tablist">
+          <button class="exp-tab active" role="tab" onclick="switchTab(this, 'crs')">Centro Administrativo</button>
+          <button class="exp-tab" role="tab" onclick="switchTab(this, 'santa-maria')">Lojas Benoit</button>
+          <button class="exp-tab" role="tab" onclick="switchTab(this, 'cotrisal')">Lojas Colombo</button>
+        </div>
+
+        <div>
+          <div class="exp-panel active" id="tab-crs">
+            <p class="exp-role">Centro Administrativo <span>@Kozma</span></p>
+            <p class="exp-period"> 2021 - 2024</p>
+            <ul class="exp-bullets">
+              <li>Auxiliando em treinamentos de novos colaboradores.</li>
+              <li>Agendamento de exames e procedimentos médicos.</li>
+              <li>Atendente de telemarketing.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">#</span>
+              <span class="exp-tag">#</span>
+              <span class="exp-tag">#</span>
+              <span class="exp-tag">#</span>
+              <span class="exp-tag">#</span>
+            </div>
+          </div>
+
+          <div class="exp-panel" id="tab-santa-maria">
+            <p class="exp-role">Vendedor <span>@Lojas Benoit</span></p>
+            <p class="exp-period">2018 - 2021</p>
+            <ul class="exp-bullets">
+              <li>Atuando na area de vendas atendendo clientes. 2020 - 2021</li>
+              <li>Caixa de pagamento recebendo e cobrando clientes junto ao crediario. 2019 - 2020</li>
+              <li>Estoquista monitorando e armazendo os produtos da loja e realizando a entrega para clientes. 2018 - 2019</li>
+            </ul>
+          </div>
+
+          <div class="exp-panel" id="tab-cotrisal">
+            <p class="exp-role">Jovem Aprendiz <span>@Lojas Colombo</span></p>
+            <p class="exp-period">2017 - 2018</p>
+            <ul class="exp-bullets">
+              <li>Suporte nas áreas administrativa.</li>
+              <li>Entrega e fiscalização de produtos vendidos.</li>
+              <li>Contagem de estoque.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="fade-in">
+      <div class="section-header">
+        <span class="section-num">03.</span>
+        <h2 class="section-title">Projetos</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 3h18v4H3z"/><path d="M3 10h18v11H3z"/><path d="M9 17h6"/></svg>
+            </span>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/usuario/delive-express" target="_blank">
+                <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <p class="project-name">DeliveExpress</p>
+          <p class="project-desc">Sistema completo de delivery com interface moderna, gerenciamento de pedidos e integração com APIs de pagamento.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M12 14v7M9 18l3 3 3-3"/></svg>
+            </span>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/usuario/coins-for-study" target="_blank">
+                <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <p class="project-name">Coins For Study</p>
+          <p class="project-desc">Plataforma gamificada para incentivar estudos, com sistema de recompensas e acompanhamento de progresso.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </span>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/usuario/sistema-vacinacao" target="_blank">
+                <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <p class="project-name">Sistema Controle de Vacinação</p>
+          <p class="project-desc">Sistema robusto para controle e gerenciamento de campanhas de vacinação com relatórios e dashboard administrativo.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </span>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/mario-laux-neto/site-massoterapia-novo" target="_blank">
+                <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a class="project-link" href="https://maria-laux-massoterapeuta.netlify.app/" target="_blank">
+                <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Demo
+              </a>
+            </div>
+          </div>
+          <p class="project-name">Massoterapia Novo</p>
+          <p class="project-desc">Redesign completo de site institucional com interface moderna e responsiva em HTML5 Semântico, Tailwind CSS e JavaScript.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="fade-in">
+      <div class="section-header">
+        <span class="section-num">04.</span>
+        <h2 class="section-title">Entre em contato</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-card">
+        <p class="contact-super">O que vem a seguir?</p>
+        <h3 class="contact-title">Vamos conversar!</h3>
+        <p class="contact-body">
+          Estou sempre aberto a novas oportunidades e conexões interessantes.
+          Se você tem alguma pergunta, projeto ou apenas quer trocar uma ideia,
+          ficarei feliz em conversar!
+        </p>
+        <a class="btn-primary" href="https://wa.me/5554996837282" target="_blank" style="display: inline-flex; margin: 0 auto;">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Vamos Conversar!
+        </a>
+
+        <div class="social-row">
+          <a class="social-link" href="https://github.com/mario-laux-neto" target="_blank" aria-label="GitHub">
+            <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/in/m%C3%A1rio-laux-neto/" target="_blank" aria-label="LinkedIn">
+            <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/mario_laux_neto/" target="_blank" aria-label="Instagram">
+            <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a class="social-link" href="mailto:marioneto@unochapeco.edu.br" aria-label="E-mail">
+            <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Daniel Tonello R. — <a href="https://github.com/dtonellor" style="color: var(--accent-light); text-decoration: none;">@Dtonellor</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
